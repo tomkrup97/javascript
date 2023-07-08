@@ -1,0 +1,118 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(https://fonts.googleapis.com/css2?family=Roboto);
+}
+
+.Home_Icon {
+    position: absolute;
+    align-self: flex-start;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.whitebar {
+    fill: white;
+    color: white;
+    height: 125px;
+    width: auto;
+    background-color: white;
+    margin-top: -8px;
+    margin-left: -8px;
+    box-shadow: 0 0 15px rgba(62,107,253,.25);
+    align-items: center;
+}
+
+body {
+    background-color: black;
+    background-image: url('../Imagenes/home_img.jpg');
+    background-size: cover;
+    background-position: 0px;
+}
+
+ul {
+    list-style: none;
+    font-size: 40px;    
+}
+
+li {
+    display: inline-block;
+    width: auto;
+    position: relative;
+}
+
+a {
+    font-size: 14;
+    text-align: center;
+    display: block;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+a:hover {
+    color: black;
+    text-underline-offset: black;
+    text-decoration: underline black;
+}
+
+ul li:hover ul a:hover {
+    color: black;
+    text-underline-offset: black;
+    text-decoration: underline black;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    width: 100%;
+}
+
+ul ul li {
+    width: 100%;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 150px;
+    margin-top: -132px;
+}
+
+h1 {
+    font-family: Roboto;
+    font-size: 64px;
+    color: white;
+    margin-top: 10px;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 80px;
+    color: white;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+
+    body{
+        background-color: black;
+        background-image: none;
+    }
+    .Navbar{
+        float: none;
+    }
+}
+
+a:active {
+    background-color: beige;
+    color: aqua;
+}
