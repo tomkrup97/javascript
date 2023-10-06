@@ -5,62 +5,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles./style_bands.css">
+    <link rel="stylesheet" href="../styles./styles.css">
     <link rel="shortcut icon" href="../imagenes/BTicon.png"> 
 </head>
 <body>
 
-    <header class="Header"> 
-        <div class="Navbar">
-        <img src="../Imagenes/BT_header.png" class="Home_Icon">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a>Bandas</a>
-                <ul>
-                    <li><a href="bandas_tributo.html">Bandas Tributo</a></li>
-                    <li><a href="bandas_covers.html">Bandas Covers</a></li>
-                    <!--<li><a href="pages/bandas_independientes.html">Bandas Independientes</a></li>-->
-                </ul>
-            </li>
-            <li><a href="calendario_shows.html">Calendario de Shows</a></li>
-            <li><a href="espacios_musicales.html">Espacios Musicales</a></li>
-            <li><a href="tengo_una_banda.html">Tengo una Banda</a></li>
-        </ul>
-        </div>
+    <header>
+        <a href="../index.html"><img src="../Imagenes/BT_header.png" class="Home_Icon"></a>
+        
+        <nav class="navbar">
+            <a class="a_nav" href="bandas_tributo.html">Bandas Tributo</a>
+            <a class="a_nav" href="bandas_covers.html"><span>Bandas Cover</span></a>
+            <a class="a_nav" href="bandas_independientes.html">Bandas Independientes</a>
+            <a class="a_nav" href="calendario_shows.html">Calendario de Shows</a>
+            <a class="a_nav" href="espacios_musicales.html">Espacios Musicales</a>
+            <a class="a_nav" href="tengo_una_banda.html">Inscribirse</a>
+        </nav>
+        <button class="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
     </header>
-   
 
+    <h1 class="title">Espacios<br>Musicales</h1>
 
-<h1>Espacios musicales</h1>
-
-<div class="Search">
-    <label for="site-search">Ingresa el nombre de una espacio o zona:</label>
-    <input type="search" id="site-search" name="q">
-    <button><strong>Buscar</strong></button>
-</div>
-
-<div class="flex_bands">
-    <div class="band_box">
-        <img src="../Imagenes/Espacios_musicales/Lucille.jpg" width="190px">
-        <p>
-        <strong>Club Lucille</strong><br>Gorriti 5520, Palermo, CABA<br><br><a>Ver shows en Club Lucille</a>
-        </p>
+    <div class="Search">
+        <label for="site-search" class="search_description">Ingresa el nombre de un espacio o zona:</label>
+        <input type="search" id="buscador" class="text_input">
+        <button>Buscar</button>
+    </div>
+    
+    <div class="flex_spaces">
+        <div class="space_box">
+            <img src="../Imagenes/Espacios_musicales/Lucille.jpg" class="band_img" alt="Logo de Club Lucille">
+            <h2>
+            Club Lucille
+            </h2>
+            <p>Gorriti 5520, Palermo, CABA</p>
+            <a class="band_link" href="#">Ver shows en Club Lucille</a>
+        </div>
+    
+        <div class="space_box">
+            <img src="../Imagenes/Espacios_musicales/teatro_gran_ituzaingo.jpg" alt="Logo de Teatro Gran Ituzaingó">
+            <h2>Teatro Gran Ituzaingó</h2>
+            <p>Gdor. Mariano Acosta 55, B1714 Ituzaingó, Prov. Bs. As.</p>
+            <a class="band_link" href="#">Ver shows en Teatro Gran Ituzaingó</a>
+        </div>
+    
+        <div class="space_box">
+            <img src="../Imagenes/Espacios_musicales/KING.png" class="band_img" alt="Logo de King's Pub">
+            <h2>King's Pub</h2>
+            <p>Av. Pres. Perón 201, Villa Sarmiento, Prov. Bs. As.</p>
+            <a class="band_link" href="#">Ver shows en King's Pub</a>
+        </div>
+    
+        <div class="space_box">
+          <img src="../Imagenes/Espacios_musicales/vade.jpg" class="band_img" alt="Logo de Vade">
+          <h2>Vade</h2>
+          <p>Av. Eva Perón 1392, Morón, Prov. Bs. As.</p>
+          <a class="band_link" href="#">Ver shows en Vade</a>
+      </div>
+    
+      <div class="space_box">
+        <img src="../Imagenes/Espacios_musicales/el_emergente.jpg" class="band_img" alt="Logo de El Emergente">
+        <h2>El Emergente</h2>
+        <p>Acuña de Figueroa 1030, Almagro, CABA</p>
+        <a class="band_link" href="#">Ver shows en El Emergente</a>
     </div>
 
-    <div class="band_box">
-        <img src="../Imagenes/Espacios_musicales/teatro_gran_ituzaingo.jpg" width="190px">
-        <p>
-        <br><strong>Teatro Gran Ituzaingó</strong><br>Gdor. Mariano Acosta 55, B1714 Ituzaingó, Prov. Bs. As.<br><br><a>Ver shows en Teatro Gran Ituzaingó</a>
-        </p>
+    <div class="space_box">
+        <img src="../Imagenes/Espacios_musicales/strummer_bar.jpg" class="band_img" alt="Logo de Strummer Bar">
+        <h2>Strummer Bar</h2>
+        <p>Godoy Cruz 1631, Palermo, CABA</p>
+        <a class="band_link" href="#">Ver shows en Strummer Bar</a>
     </div>
 
-    <div class="band_box">
-        <img src="../Imagenes/Espacios_musicales/KING.png" width="190px">
-        <p>
-        <strong>King's Pub</strong><br>Av. Pres. Perón 201, Villa Sarmiento, Prov. Bs. As.<br><a>Ver shows en King's Pub</a>
-        </p>
-    </div>
-
-</div>
+    <script src="../main.js"></script>
 
 </body>

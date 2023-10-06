@@ -1,0 +1,301 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(https://fonts.googleapis.com/css2?family=Roboto);
+}
+
+* {
+  font-family: Roboto;
+}
+
+body {
+  background-image: url("../Imagenes/home_img.jpg");
+  background-size: cover;
+  background-position: 0px;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  box-shadow: 3px 3px 3px rgb(99, 99, 99);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  justify-content: space-around;
+  font-size: 34px;
+}
+
+.menu_burger {
+  display: none;
+}
+
+.a_nav {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.a_nav:hover {
+  background: black;
+  color: white;
+  height: max-content;
+}
+
+.Home_Icon {
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.Presentation {
+  font-family: Roboto;
+  font-size: 80px;
+  color: white;
+  margin-left: 100px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.Search {
+  font-size: 24px;
+  color: white;
+  margin-left: 30px;
+}
+
+.Calendar {
+  font-size: 24px;
+  color: white;
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+button {
+  color: black;
+  font-size: 20px;
+}
+
+ul {
+  list-style: none;
+  font-size: 35px;
+  padding: 0;
+  font-family: Roboto;
+  color: black;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 64px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.band_box, .space_box, .show_box {
+  padding: 15px;
+  margin: 30px;
+  border: 3px solid rgb(255, 255, 255);
+  color: white;
+  height: auto;
+  width: 330px;
+  color: white;
+  font-size: larger;
+  background: linear-gradient(to left, rgb(30, 30, 30), rgb(5, 5, 5));
+  place-items: center;
+  position: relative;
+}
+
+a {
+  text-align: center;
+  display: block; 
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.band_link:hover {
+  background-color: black;
+  color: white;
+}
+
+.flex_bands, .flex_shows, .flex_spaces {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+form {
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  place-content: center;
+  place-items: center;
+  margin-left: 30px;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: white;
+  margin-left: 10px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+
+.search_description {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.band_img {
+  width: 150px;
+  height: 150px;
+}
+
+.Calendar {
+  margin-left: 30px;
+  margin-bottom: 15px;
+}
+
+.formulario {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.text_input {
+  margin-bottom: 15px;
+  height: 28px;
+  font-size: 18px;
+  width: 190px;
+  
+}
+
+.title {
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.video_portada {
+  margin-left: 20px;
+}
+
+.favbutton {
+  background-color: none;
+  text-decoration: none;
+  position: absolute;
+  right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .Presentation {
+    font-size: 36px;
+    margin-left: 25px;
+  }
+  .Search {
+    margin-left: 5px;
+  }
+  .Calendar {
+    margin-left: 5px;
+  }
+  .formulario {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .Search {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .enviar_button {
+    margin-bottom: 10px;
+    margin-left: 38%;
+  }
+  .text_input {
+    max-width: 300px;
+  }
+  .title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar {
+    font-size: 28px;
+  }
+
+  .a_nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Home_Icon {
+    align-items: flex-start;
+  }
+
+  .menu_burger {
+    display: flex;
+    margin-right: 2rem;
+    background-color: white;
+    border: none;
+  }
+
+  .navbar {
+    font-size: 28px;
+    display: none;
+  }
+
+  header {
+    justify-content: space-between;
+  }
+
+  .a_nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  body {
+    background-image: url("../Imagenes/home_img.jpg");
+    background-size: contain;
+    background-position: 0px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .favbutton {
+    background-color: none;
+    text-decoration: none;
+    position: absolute;
+    margin-left: 250px;  
+  }
+
+}
+
+.band_header {
+  display: flex;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.redes_sociales {
+  margin-left: 20px;
+  color: white;
+}
+
+.filtro {
+  display: none;
+}

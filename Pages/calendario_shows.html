@@ -5,54 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles./style_bands.css">
+    <link rel="stylesheet" href="../styles./styles.css">
     <link rel="shortcut icon" href="../imagenes/BTicon.png"> 
 </head>
 <body>
 
-    <header class="Header">           
-        <nav class="Navbar">
-            <img src="../Imagenes/BT_header.png" class="Home_Icon">
-            <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a>Bandas</a>
-                <ul>
-                    <li><a href="bandas_tributo.html">Bandas Tributo</a></li>
-                    <li><a href="bandas_covers.html">Bandas Covers</a></li>
-                    <!--<li><a href="pages/bandas_independientes.html">Bandas Independientes</a></li>-->
-                </ul>
-            </li>
-            <li><a href="calendario_shows.html">Calendario de Shows</a></li>
-            <li><a href="espacios_musicales.html">Espacios Musicales</a></li>
-            <li><a href="tengo_una_banda.html">Tengo una Banda</a></li>
-        </ul>
+    <header>
+        <a href="../index.html"><img src="../Imagenes/BT_header.png" class="Home_Icon"></a>
+        
+        <nav class="navbar">
+            <a class="a_nav" href="bandas_tributo.html">Bandas Tributo</a>
+            <a class="a_nav" href="bandas_covers.html"><span>Bandas Cover</span></a>
+            <a class="a_nav" href="bandas_independientes.html">Bandas Independientes</a>
+            <a class="a_nav" href="calendario_shows.html">Calendario de Shows</a>
+            <a class="a_nav" href="espacios_musicales.html">Espacios Musicales</a>
+            <a class="a_nav" href="tengo_una_banda.html">Inscribirse</a>
         </nav>
+        <button class="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
     </header>
-   
 
+<h1 class="title">Calendario<br>De Shows</h1>
 
-<h1>Calendario de Shows</h1>
-
-<div class="Search">
-    <label for="site-search">Ingresa el nombre de una show:</label>
-    <input type="search" id="site-search" name="q">
-    <button><strong>Buscar</strong></button>
+<div class="Calendar">
+    <label class="search_description">Buscar por Fecha</label>
+    <input type="date" value="today" class="text_input"> <button>Buscar</button>
 </div>
 
-<div class="flex_bands">
-    <div class="band_box">
-        <img src="../Imagenes/Bands/show_vertigo.jpg" width="190px">
+<div class="Search">
+    <label for="site-search" class="search_description">Busar por nombre del show</label>
+    <input type="search" id="buscador" class="text_input">
+    <button>Buscar</button>
+</div>
+
+<div class="flex_shows">
+    <div class="show_box">
+        <img src="../Imagenes/Bands/show_vertigo.jpg" class="band_img" alt="Logo de Show Vertigo en Club Lucille">
         <p>
         <strong>Vertigo</strong> tributoa a U2<br><strong>Fecha:</strong> Jueves 29 de Junio 2023<br><strong>En:</strong> Club Lucille, Palermo
         </p>
     </div>
 
-    <div class="band_box">
-        <img src="../Imagenes/Bands/Physical_tributo_show.jpg" width="190px">
+    <div class="show_box">
+        <img src="../Imagenes/Bands/Physical_tributo_show.jpg" class="band_img" alt="Logo de Show Phisical Graffiti en Teatro Gran Ituzaingó">
         <p>
         <strong>Physical Graffiti</strong> tributoa a Led Zeppelin<br><strong>Fecha:</strong> Sábado 05 de Agosto 2023<br><strong>En:</strong> Teatro Gran Ituzaingó, Ituzaingó
         </p>
     </div>
 </div>
+
+<script src="../main.js"></script>
 
 </body>

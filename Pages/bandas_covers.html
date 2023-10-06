@@ -5,52 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles./style_bands.css">
+    <link rel="stylesheet" href="../styles./styles.css">
     <link rel="shortcut icon" href="../imagenes/BTicon.png"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
 
-    <header class="Header">  
-        <div class="Navbar">
-        <img src="../Imagenes/BT_header.png" class="Home_Icon">
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a>Bandas</a>
-                <ul>
-                    <li><a href="bandas_tributo.html">Bandas Tributo</a></li>
-                    <li><a href="bandas_covers.html">Bandas Covers</a></li>
-                    <!--<li><a href="pages/bandas_independientes.html">Bandas Independientes</a></li>-->
-                </ul>
-            </li>
-            <li><a href="calendario_shows.html">Calendario de Shows</a></li>
-            <li><a href="espacios_musicales.html">Espacios Musicales</a></li>
-            <li><a href="tengo_una_banda.html">Tengo una Banda</a></li>
-        </ul>
-        </div>
+    <header>
+        <a href="../index.html"><img src="../Imagenes/BT_header.png" class="Home_Icon"></a>
+        
+        <nav class="navbar">
+            <a class="a_nav" href="bandas_tributo.html">Bandas Tributo</a>
+            <a class="a_nav" href="bandas_covers.html"><span>Bandas Cover</span></a>
+            <a class="a_nav" href="bandas_independientes.html">Bandas Independientes</a>
+            <a class="a_nav" href="calendario_shows.html">Calendario de Shows</a>
+            <a class="a_nav" href="espacios_musicales.html">Espacios Musicales</a>
+            <a class="a_nav" href="tengo_una_banda.html">Inscribirse</a>
+        </nav>
+        <button class="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
     </header>
    
-    <h1>Bandas Covers</h1>
+    <h1 class="title">Bandas<br>Cover</h1>
 
     <div class="Search">
-        <label for="site-search">Ingresa el nombre de una banda:</label>
-        <input type="search" id="site-search" name="q">
-        <button><strong>Buscar</strong></button>
-    </div>
+        <label for="site-search" class="search_description">Ingresa el nombre de una banda:</label>
+        <input type="search" id="buscador" class="text_input" placeholder="Banda Cover...">
+        <button>Buscar</button>
+    </div>  
 
     <div class="flex_bands">
         <div class="band_box">
-            <img src="../Imagenes/Bands/la_san_francisco.jpg" width="150px">
-            <h2>
+            <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+            <img src="../Imagenes/Bands/la_san_francisco.jpg" class="band_img" alt="Logo de La San Francisco">           
+            <h2 class="band_name">
                 La San Francisco
             </h2>
 
             <p>
-                Covers de <strong>Rock'n Roll</strong><br><br><a>Ver Banda</a>
+                Covers de <strong>Rock'n Roll</strong>
             </p>
+            <a class="band_link" href="#">Ver Banda</a>
         </div>
-    
+
+        
+        <div class="band_box">
+            <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+            <img src="../Imagenes/Bands/covers/power_of_nature.jpg" class="band_img" alt="Logo de Power Of Nature">
+            <h2 class="band_name">
+                Power Of Nature
+            </h2>
+
+            <p>
+                Covers de <strong>Rock - Grunge</strong>
+            </p>
+            <a class="band_link" href="#">Ver Banda</a>
+        </div>
     
     
     </div>
 
+    <script src="../main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>

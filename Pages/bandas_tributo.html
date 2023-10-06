@@ -5,164 +5,354 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../styles./style_bands.css">
-    <link rel="shortcut icon" href="../imagenes/BTicon.png"> 
+    <link rel="stylesheet" href="../styles./styles.css">
+    <link rel="shortcut icon" href="../imagenes/BTicon.png">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
 
-    <header class="Header">  
-        <nav class="Navbar">
-            <img src="../Imagenes/BT_header.png" class="Home_Icon">
-            <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a>Bandas</a>
-                <ul>
-                    <li><a href="#">Bandas Tributo</a></li>
-                    <li><a href="bandas_covers.html">Bandas Covers</a></li>
-                    <!--<li><a href="pages/bandas_independientes.html">Bandas Independientes</a></li>-->
-                </ul>
-            </li>
-            <li><a href="calendario_shows.html">Calendario de Shows</a></li>
-            <li><a href="espacios_musicales.html">Espacios Musicales</a></li>
-            <li><a href="tengo_una_banda.html">Tengo una Banda</a></li>
-        </ul>
+    <header>
+        <a href="../index.html"><img src="../Imagenes/BT_header.png" class="Home_Icon"></a>
+        
+        <nav class="navbar">
+            <a class="a_nav" href="bandas_tributo.html">Bandas Tributo</a>
+            <a class="a_nav" href="bandas_covers.html"><span>Bandas Cover</span></a>
+            <a class="a_nav" href="bandas_independientes.html">Bandas Independientes</a>
+            <a class="a_nav" href="calendario_shows.html">Calendario de Shows</a>
+            <a class="a_nav" href="espacios_musicales.html">Espacios Musicales</a>
+            <a class="a_nav" href="tengo_una_banda.html">Inscribirse</a>
         </nav>
+        <button class="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
     </header>
-   
-    <!--<h1>
-            Banda<br>Tributo
-        </h1>-->
-
-    <h1>Bandas Tributo</h1>
+    
+    <h1 class="title">Bandas<br>Tributo</h1>
 
     <div class="Search">
-        <label for="site-search">Ingresa el nombre de una banda:</label>
-        <input type="search" id="site-search" name="q">
-        <button><strong>Buscar</strong></button>
+        <label for="site-search" class="search_description">Ingresa el nombre de una banda:</label>
+        <input type="search" id="buscador" class="text_input" placeholder="Banda Tributo...">
+        <button>Buscar</button>
     </div>
 
-    <div class="flex_bands">
-        <div class="band_box">
-            <img src="../Imagenes/Bands/ssupersonics.jpg" width="150px">
-            <h2>
-                Seattle Supersonics
-            </h2>
+<div class="flex_bands">
 
-            <p>
-                Tributo a <strong>Nirvana</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/ssupersonics.jpg" class="band_img" alt="Logo de Seattle Supersonics">
+        <h2>
+            Seattle Supersonics
+        </h2>
+        
+        <p>
+            Tributo a <strong>Nirvana</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+ 
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/Physical_tributo.png" class="band_img" alt="Logo de Physical Graffiti">
+        <h2>
+            Physical Graffiti
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/Physical_tributo.png">
-            <h2>
-                Physical Graffiti
-            </h2>
+        <p>
+            Tributo a <strong>Led Zeppelin</strong>
+        </p>
+        <a class="band_link" href="bandas_tributo/physical_graffiti.html">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>Led Zeppelin</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/vertigo.png" class="band_img" alt="Logo de Vertigo">
+        <h2>
+            Vertigo
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/vertigo.jpg" width="150px">
-            <h2>
-                Vertigo
-            </h2>
+        <p>
+            Tributo a <strong>U2</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>U2</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/new_sensation.png" class="band_img" alt="Logo de New Sensation">
+        <h2>
+            New Sensation
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/new_sensation.jpg" width="150px">
-            <h2>
-                New Sensation
-            </h2>
+        <p>
+            Tributo a <strong>INXS</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>INXS</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/bleed_the_freak.jpg" class="band_img" alt="Logo de Bleed The Freak">
+        <h2>
+            Bleed The Freak
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/bleed_the_freak.jpg" width="150px">
-            <h2>
-                Bleed The Freak
-            </h2>
+        <p>
+            Tributo a <strong>Alice In Chains</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>Alice In Chains</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/ramonos.jpg" class="band_img" alt="Logo de Ramonos">
+        <h2>
+            Ramonos
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/ramonos.jpg" width="150px">
-            <h2>
-                Ramonos
-            </h2>
+        <p>
+            Tributo a <strong>Ramones</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>Ramones</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/rey_lagarto.jpg" class="band_img" alt="Logo de Rey Lagarto">
+        <h2>
+            Rey Lagarto
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/rey_lagarto.jpg" width="150px">
-            <h2>
-                Rey Lagarto
-            </h2>
+        <p>
+            Tributo a <strong>The Doors</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>The Doors</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/creedence_clearwater_revalued.jpg" class="band_img" alt="Logo de Creedence Clearwater Revalued">
+        <h2>
+            Creedence Clearwater Revalued
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/creedence_clearwater_revalued.jpg" width="150px">
-            <h2>
-                Creedence Clearwater Revalued
-            </h2>
+        <p>
+            Tributo a <strong>Creedence</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>Creedence</strong><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/los_infartos.jpg" class="band_img" alt="Logo de Los Infartos">
+        <h2>
+            Los Infartos
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/los_infartos.jpg" width="150px">
-            <h2>
-                Los Infartos
-            </h2>
+        <p>
+            Tributo a <strong>The Strokes</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-            <p>
-                Tributo a <strong>The Strokes</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/wake_up_against.jpg" class="band_img" alt="Logo de Wake Up Against">
+        <h2>
+            Wake Up Against
+        </h2>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/wake_up_against.jpg" width="150px">
-            <h2>
-                Wake Up Against
-            </h2>
-    
-            <p>
-                Tributo a <strong>Rage Against The Machine</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>
+        <p>
+            Tributo a <strong>Rage Against The Machine</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
 
-        <div class="band_box">
-            <img src="../Imagenes/Bands/god_save_the _pistols.jpg" width="150px">
-            <h2>
-                God Save The Pistols
-            </h2>
-    
-            <p>
-                Tributo a <strong>Sex Pistols</strong><br><br><a>Ver Banda</a>
-            </p>
-        </div>  
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/god_save_the _pistols.jpg" class="band_img" alt="Logo de God Save The Pistols">
+        <h2>
+            God Save The Pistols
+        </h2>
 
+        <p>
+            Tributo a <strong>Sex Pistols</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/the_turners.jpg" class="band_img" alt="Logo de The Turners">
+        <h2>
+            The Turners
+        </h2>
+
+        <p>
+            Tributo a <strong>Artic Monkeys</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/flash_point.png" class="band_img" alt="Logo de Flash Point">
+        <h2>
+            Flash Point
+        </h2>
+
+        <p>
+            Tributo a <strong>The Rolling Stones</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/corduroy.png" class="band_img" alt="Logo de Corduroy">
+        <h2>
+            Corduroy
+        </h2>
+
+        <p>
+            Tributo a <strong>Pearl Jam</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/not_elvis.jpg" class="band_img" alt="Logo de Not Elvis">
+        <h2>
+            Not Elvis
+        </h2>
+
+        <p>
+            Tributo a <strong>Elvis Presley</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/purple_nights.jpg" class="band_img" alt="Logo de Purple Nights">
+        <h2>
+            Purple Nights
+        </h2>
+
+        <p>
+            Tributo a <strong>Deep Purple</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/my_own_way.png" class="band_img" alt="Logo de My Own Way">
+        <h2>
+            My Own Way
+        </h2>
+
+        <p>
+            Tributo a <strong>Duran Duran</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/psycho_funk.jpg" class="band_img" alt="Logo de Psycho Funk">
+        <h2>
+            Psycho Funk
+        </h2>
+
+        <p>
+            Tributo a <strong>Red Hot Chili Peppers</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/cabezas_parlantes.png" class="band_img" alt="Logo de Cabezas Parlantes">
+        <h2>
+            Cabezas Parlantes
+        </h2>
+
+        <p>
+            Tributo a <strong>Talking Heads</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/demulsion.jpg" class="band_img" alt="Logo de Demulsion">
+        <h2>
+            Demulsion
+        </h2>
+
+        <p>
+            Tributo a <strong>AC/DC</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
     </div>
     
+    
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/sinners.png" class="band_img" alt="Logo de Sinners">
+        <h2>
+            Sinners
+        </h2>
+
+        <p>
+            Tributo a <strong>Stone Temple Pilots</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/fast_food.png" class="band_img" alt="Logo de Fast Food">
+        <h2>
+            Fast Food
+        </h2>
+
+        <p>
+            Tributo a <strong>Foo Fighters</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/next.png" class="band_img" alt="Logo de Next">
+        <h2>
+            Next
+        </h2>
+
+        <p>
+            Tributo a <strong>INXS</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+    <div class="band_box">
+        <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
+        <img src="../Imagenes/Bands/english_tea.jpg" class="band_img" alt="Logo de English Tea">
+        <h2>
+            English Tea
+        </h2>
+
+        <p>
+            Tributo a <strong>Oasis</strong>
+        </p>
+        <a class="band_link" href="#">Ver Banda</a>
+    </div>
+
+</div>
+
+    <script src="../main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
 </body>
