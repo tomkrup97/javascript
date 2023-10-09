@@ -42,7 +42,15 @@ nav {
 .a_nav:hover {
   background: black;
   color: white;
-  height: max-content;
+}
+
+a {
+  text-align: center;
+  display: block; 
+  color: rgb(0, 0, 0);
+  background-color: white;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .Home_Icon {
@@ -104,15 +112,6 @@ h1 {
   background: linear-gradient(to left, rgb(30, 30, 30), rgb(5, 5, 5));
   place-items: center;
   position: relative;
-}
-
-a {
-  text-align: center;
-  display: block; 
-  color: rgb(0, 0, 0);
-  background-color: white;
-  padding: 10px;
-  text-decoration: none;
 }
 
 .band_link:hover {
@@ -284,6 +283,13 @@ h2 {
 
 }
 
+@media screen and (max-width: 590px) {
+  .YouTube {
+  width: 350px;
+  }
+
+}
+
 .band_header {
   display: flex;
   margin-left: 10px;
@@ -294,6 +300,19 @@ h2 {
 .redes_sociales {
   margin-left: 20px;
   color: white;
+  background-color: none;
+}
+
+.redes_link {
+  margin-top: -15px;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.band_shows {
+  margin-left: 20px;
+  color: white;
+  background-color: none;
 }
 
 .filtro {
