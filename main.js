@@ -11,6 +11,13 @@ cerrarNavbar.addEventListener("click", () => {
     nav.classList.remove("visible");
 }) 
 
+abrirNavbar.addEventListener("touchend", () => {
+    nav.classList.add("visible");
+}) 
+
+cerrarNavbar.addEventListener("touchend", () => {
+    nav.classList.remove("visible");
+}) 
 
 //Código para Buscador
 document.addEventListener('keyup', e=> {
