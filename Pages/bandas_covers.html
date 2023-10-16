@@ -13,15 +13,16 @@
     <header>
         <a href="../index.html"><img src="../Imagenes/BT_header.png" class="Home_Icon"></a>
         
-        <nav class="navbar">
+        <nav id="navbar">
+            <button id="close_nav">X</button>
             <a class="a_nav" href="bandas_tributo.html">Bandas Tributo</a>
-            <a class="a_nav" href="bandas_covers.html"><span>Bandas Cover</span></a>
+            <a class="a_nav" href="bandas_covers.html">Bandas Cover</a>
             <a class="a_nav" href="bandas_independientes.html">Bandas Independientes</a>
             <a class="a_nav" href="calendario_shows.html">Calendario de Shows</a>
             <a class="a_nav" href="espacios_musicales.html">Espacios Musicales</a>
             <a class="a_nav" href="tengo_una_banda.html">Inscribirse</a>
         </nav>
-        <button class="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
+        <button id="menu_burger"><img src="../Imagenes/menu-burger.svg"></button>
     </header>
    
     <h1 class="title">Bandas<br>Cover</h1>
@@ -35,7 +36,7 @@
     <div class="flex_bands">
         <div class="band_box">
             <button class="favbutton"><img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío"></button>
-            <img src="../Imagenes/Bands/la_san_francisco.jpg" class="band_img" alt="Logo de La San Francisco">           
+            <img src="../Imagenes/Bands/covers/la_san_francisco.jpg" class="band_img" alt="Logo de La San Francisco">           
             <h2 class="band_name">
                 La San Francisco
             </h2>
@@ -63,6 +64,6 @@
     
     </div>
 
-    <script src="../main.js"></script>
+    <script src="../cover_bands.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>

@@ -1,0 +1,23 @@
+[
+    {
+    "id": 1,
+    "nombre": "La San Francisco",
+    "tributo": "",
+    "genero": "Rock and Roll",
+    "imagen": "../Imagenes/Bands/covers/la_san_francisco.jpg"
+},
+
+{
+    "id": 2,
+    "nombre": "Power Of Nature",
+    "tributo": "",
+    "genero": "Rock - Grunge",    "imagen": "../Imagenes/Bands/covers/power_of_nature.jpg"
+},
+
+{
+    "id": 3,
+    "nombre": "Super Beat",
+    "tributo": "",
+    "genero": "Rock - Rock and Roll",    "imagen": "../Imagenes/Bands/covers/super_beat.jpg"
+}
+]

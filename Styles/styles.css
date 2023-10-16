@@ -20,17 +20,29 @@ header {
   background-color: white;
   justify-content: space-around;
   box-shadow: 3px 3px 3px rgb(99, 99, 99);
+  padding: -15px;
 }
 
-nav {
+#navbar {
   display: flex;
   align-items: center;
   background-color: white;
   justify-content: space-around;
   font-size: 34px;
+  flex-direction: row;
 }
 
-.menu_burger {
+ul {
+  list-style: none;
+  font-size: 35px;
+  padding: 0;
+  font-family: Roboto;
+  color: black;
+  flex-direction: row;
+  display: flex;
+}
+
+#menu_burger {
   display: none;
 }
 
@@ -55,7 +67,7 @@ a {
 
 .Home_Icon {
   max-width: 80%;
-  max-height: 100%;
+  max-height: 80%;
 }
 
 .Presentation {
@@ -82,14 +94,6 @@ a {
 button {
   color: black;
   font-size: 20px;
-}
-
-ul {
-  list-style: none;
-  font-size: 35px;
-  padding: 0;
-  font-family: Roboto;
-  color: black;
 }
 
 h1 {
@@ -197,6 +201,16 @@ h2 {
   right: 15px;
 }
 
+#close_nav {
+  align-self: flex-end;
+  margin-top: 15px;
+  margin-left: 50px;
+}
+
+#close_nav {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .Presentation {
     font-size: 36px;
@@ -229,7 +243,7 @@ h2 {
 }
 
 @media screen and (max-width: 1200px) {
-  .navbar {
+  #navbar {
     font-size: 28px;
   }
 
@@ -244,16 +258,32 @@ h2 {
     align-items: flex-start;
   }
 
-  .menu_burger {
+  #menu_burger {
     display: flex;
     margin-right: 2rem;
     background-color: white;
     border: none;
   }
 
-  .navbar {
+  #navbar {
     font-size: 28px;
-    display: none;
+    position: absolute;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    margin-top: 0px;
+    z-index: 1;
+  }
+
+  #navbar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #close_nav {
+    display: flex;
   }
 
   header {
@@ -318,3 +348,4 @@ h2 {
 .filtro {
   display: none;
 }
+
