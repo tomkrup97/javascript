@@ -11,13 +11,15 @@
     "id": 2,
     "nombre": "Power Of Nature",
     "tributo": "",
-    "genero": "Rock - Grunge",    "imagen": "../Imagenes/Bands/covers/power_of_nature.jpg"
+    "genero": "Rock - Grunge",
+    "imagen": "../Imagenes/Bands/covers/power_of_nature.jpg"
 },
 
 {
     "id": 3,
     "nombre": "Super Beat",
     "tributo": "",
-    "genero": "Rock - Rock and Roll",    "imagen": "../Imagenes/Bands/covers/super_beat.jpg"
+    "genero": "Rock - Rock and Roll",
+    "imagen": "../Imagenes/Bands/covers/super_beat.jpg"
 }
 ]

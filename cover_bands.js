@@ -11,7 +11,13 @@ cerrarNavbar.addEventListener("click", () => {
     nav.classList.remove("visible");
 }) 
 
+abrirNavbar.addEventListener("touchstart", () => {
+    nav.classList.add("visible");
+}) 
 
+cerrarNavbar.addEventListener("touchstart", () => {
+    nav.classList.remove("visible");
+}) 
 
 //Código para Buscador
 document.addEventListener('keyup', e=> {
@@ -27,7 +33,7 @@ document.addEventListener('keyup', e=> {
 
 //Código para traer bandas del json local
 class Banda {
-    constructor(id, nombre, tributo, imagen) {
+    constructor(id, nombre, tributo, genero, imagen) {
         this.id = id;
         this.nombre = nombre;
         this.tributo = tributo;
