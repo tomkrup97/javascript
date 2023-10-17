@@ -50,7 +50,7 @@ class BaseDeDatos {
 
     //Función de carga de bandas
     async cargarBandas() {
-        const resultado = await fetch("/bandas.json");
+        const resultado = await fetch("../bandas.json");
         this.bandas = await resultado.json();
         cargarBanda(this.bandas);
         console.log(this.bandas);
