@@ -284,6 +284,7 @@ h2 {
 
   #close_nav {
     display: flex;
+    margin-right: 15px;
   }
 
   header {
