@@ -70,7 +70,7 @@ cargarBanda(dataBase.traerBandas());
 
 function cargarBanda(bandas) {
     divBandas.innerHTML = "";
-
+    //Esqueleto/molde de la caja de Banda 
     for (const banda of bandas) {
         divBandas.innerHTML += `
         <div class="band_box">
@@ -87,38 +87,39 @@ function cargarBanda(bandas) {
         </div>
         `;
     }
+
+    const favbuttons = document.querySelectorAll(".favbutton");
+    favbuttons.forEach(button => {
+        button.addEventListener("click", function() {
+            if (this.classList.contains("active")) {
+                this.innerHTML = `<img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío">`;
+                this.classList.remove("active");
+                Toastify({
+                    text: "Eliminado de favoritos",
+                    duration: 3000,
+                    gravity: "bottom",
+                    position: "center",
+                    style: {
+                        background: "linear-gradient(to bottom, #0d0d0d, #525252)",
+                    },
+                    }).showToast();
+            } else {
+                this.innerHTML = `<img src="../Imagenes/star-filled.png" alt="icono de favorito lleno"/>`;
+                this.classList.add("active");
+                Toastify({
+                    text: "Agregado a favoritos",
+                    duration: 3000,
+                    gravity: "bottom",
+                    position: "center",
+                    style: {
+                        background: "linear-gradient(to bottom, #0d0d0d, #525252)",
+                    },
+                    }).showToast();
+                
+            }
+        });
+    });
+
 }
 
 
-//Código para Favoritos (no funciona con el código para traer bandas del json local)
-const favbuttons = document.querySelectorAll(".favbutton");
-favbuttons.forEach(button => {
-    button.addEventListener("click", function() {
-        if (this.classList.contains("active")) {
-            this.innerHTML = `<img src="../Imagenes/star-line.svg" class="favstar" alt="icono de favorito vacío">`;
-            this.classList.remove("active");
-            Toastify({
-                text: "Eliminado de favoritos",
-                duration: 3000,
-                gravity: "bottom",
-                position: "center",
-                style: {
-                    background: "linear-gradient(to bottom, #0d0d0d, #525252)",
-                  },
-                }).showToast();
-        } else {
-            this.innerHTML = `<img src="../Imagenes/star-filled.png" alt="icono de favorito lleno"/>`;
-            this.classList.add("active");
-            Toastify({
-                text: "Agregado a favoritos",
-                duration: 3000,
-                gravity: "bottom",
-                position: "center",
-                style: {
-                    background: "linear-gradient(to bottom, #0d0d0d, #525252)",
-                  },
-                }).showToast();
-            
-        }
-    });
-});
