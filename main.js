@@ -18,21 +18,6 @@ abrirNavbar.addEventListener("click", () => {
 }) 
 
 
-
-
-// abrirNavbar.forEach(button => {
-//     button.addEventListener("click", function() {
-//         if (this.classList.contains("burga")) {
-//             this.innerHTML = `<button id="close_nav">X</button>`;
-//             nav.classList.remove("visible");
-//             }
-//         else {
-//             this.innerHTML = `<button id="close_nav">X</button>`;
-//             nav.classList.add("visible");;
-//         }
-// })
-// })
-
 //Código para Buscador
 document.addEventListener('keyup', e=> {
     if (e.target.matches('#buscador')) {

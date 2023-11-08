@@ -1,23 +1,22 @@
 //Código para manejo de la Navbar en Mobile
+const header  = document.querySelector("header");
 const nav = document.querySelector("#navbar");
-const abrirNavbar = document.querySelector("#menu_burger");
-const cerrarNavbar = document.querySelector("#close_nav");
+const abrirNavbar = document.querySelector("#NavButton");
+const cerrarNavbar = document.querySelector("#NavButton");
+
+const rotate1 = document.querySelector("#line1");
+const rotate2 = document.querySelector("#line2");
+const rotate3 = document.querySelector("#line3");
+
 
 abrirNavbar.addEventListener("click", () => {
-    nav.classList.add("visible");
+    nav.classList.toggle("visible");
+    nav.classList.toggle("desplegar_menu");
+    rotate1.classList.toggle("firstRotate");
+    rotate2.classList.toggle("secondNone");
+    rotate3.classList.toggle("thirdRotate");
 }) 
 
-cerrarNavbar.addEventListener("click", () => {
-    nav.classList.remove("visible");
-}) 
-
-abrirNavbar.addEventListener("touchstart", () => {
-    nav.classList.add("visible");
-}) 
-
-cerrarNavbar.addEventListener("touchstart", () => {
-    nav.classList.remove("visible");
-}) 
 
 //Código para Buscador
 document.addEventListener('keyup', e=> {
